@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../scripts/excercise_handling.js"></script>
+    
+    <head>
+        <title>GymTracker</title>
+        <h1 id="main_title">Welcome to GymTracker!</h1>
+    </head>
+    <body>
+        <h2>Create new excersise:</h2>
+        <div id="exc_creation">
+            <form action="/addExc" method="post">
+                <input type="text" name="exc_name" id="exc_name">
+                <label for="exc_name">Excercise name:</label>
+
+                <input type="text" name="exc_reps" id="exc_reps">
+                <label for="exc_reps">Number of repetitions</label>
+
+                <button onclick="printExc()">Add</button>
+            </form>
+        </div>
+        
+    </body>
+</html>
